@@ -104,3 +104,88 @@ video {
 // ---------------------------------------------
 // Votre code ici :
 // ---------------------------------------------
+
+/*01*/
+.marker .product-cart {
+  opacity: 0;
+  transition: 0.5s;
+}
+.marker:hover .product-cart {
+  opacity: 1;
+}
+.marker .product-cart:hover {
+  background: var(--blue);
+}
+
+/*02*/
+.pencil .product-cart {
+  opacity: 0;
+  transition: 0.7s;
+  transform: translateY(-70px);
+}
+.pencil:hover .product-cart {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.pencil .product-cart:hover {
+  background: var(--blue);
+}
+
+/*03*/
+.scissors {
+  transition: 0.5s;
+}
+.scissors:hover {
+  background: var(--blue);
+  .product-title {
+    color: var(--white);
+  }
+  .product-price {
+    color: var(--gray);
+  }
+}
+
+/*04*/
+.sketchbook img {
+  transition: 0.5s;
+}
+.sketchbook .product-image {
+  overflow: hidden;
+  transition: 0.5s;
+}
+.sketchbook img:hover {
+  transform: scale(130%);
+}
+
+/*05*/
+.glue img {
+  transition: 0.5s;
+  filter: blur(3px);
+}
+.glue .product-image {
+  overflow: hidden;
+}
+.glue img:hover {
+  filter: none;
+}
+
+/*06*/
+.share-list .share-icon {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.share-icon:nth-child(1) {
+  transition: 0.7s;
+}
+.share-icon:nth-child(2) {
+  transition: 1s;
+}
+.share-icon:nth-child(3) {
+  transition: 1.3s;
+}
+.share:nth-child(1):hover {
+  .share-list .share-icon {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
